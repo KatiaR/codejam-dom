@@ -12,7 +12,8 @@ body {
         top: 10px;
         right: 10px;
         background-color: lightblue;
-        padding: 20px;
+		padding: 20px;
+		
         .close {
             position: absolute;
             top: 10px;
@@ -28,6 +29,9 @@ body {
             outline: none;
         }
         .slider {
+			border: 2px solid black;
+			margin: 15px;
+			padding: 10px;
             h2 {
                 font-size: 1rem;
             }
@@ -70,5 +74,8 @@ body {
 	}
 	.closed {
 		display: none;
+	}
+	.active {
+		background-color: blue;
 	}
 }
