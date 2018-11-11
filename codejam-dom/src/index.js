@@ -81,4 +81,4 @@ function onLoad() {
     }
   });
 }
-window.onload = setTimeout(onLoad, 1000);
+window.onload = setTimeout(onLoad, 5000);
