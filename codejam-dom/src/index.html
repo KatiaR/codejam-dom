@@ -74,8 +74,8 @@
 			nunc quis justo elementum, sit amet bibendum velit tincidunt.
 		</p>
 	</section>
-	<section class="modal-window closed">
-		<button class="btn close">X</button>
+	<section class="modal-window closed elem-focus" tabindex="0">
+		<button class="btn close elem-focus" tabindex="1">X</button>
 		<article class="slider">
 			<h2>EMAIL TIP OF THE DAY</h2>
 			<p class="text-slides">More than 60% of emails we send do not require a response.
@@ -84,12 +84,12 @@
 			</p>
 		</article>
 		<article class="control-section">
-			<div class="disable-tips">
-				<input type="checkbox" id="tips" name="checkbox" value="value" />
+			<div class="disable-tips elem-focus">
+				<input type="checkbox" id="tips" name="checkbox" value="value" tabindex="2" />
 				<label for="tips">Disable Tips</label>
 			</div>
 			<div class="navigation">
-				<button class="btn btn-navigation prev">&#60</button>
+				<button class="btn btn-navigation prev elem-focus" tabindex="3">&#60</button>
 				<div class="dots">
 					<span class="dot" data-position="0"></span>
 					<span class="dot" data-position="1"></span>
@@ -97,7 +97,7 @@
 					<span class="dot" data-position="3"></span>
 					<span class="dot" data-position="4"></span>
 				</div>
-				<button class="btn btn-navigation next">&#62</button>
+				<button class="btn btn-navigation next elem-focus" tabindex="4">&#62</button>
 
 			</div>
 		</article>
