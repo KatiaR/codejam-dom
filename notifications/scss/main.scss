@@ -1,0 +1,86 @@
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .modal-window {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        font-size: 1rem;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: lightblue;
+		padding: 20px;
+		.elem-focus {
+		&:focus {
+			box-shadow: 0 0 10px rgba(54, 41, 233, 0.75);
+		}
+	}
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            &:hover {
+                box-shadow: 0 0 10px #fff;
+            }
+        
+        }
+        .btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+        .slider {
+            border: 2px solid black;
+            margin: 15px;
+            padding: 10px;
+            h2 {
+                font-size: 1rem;
+            }
+        }
+        .control-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .disable-tips {
+                display: flex;
+            }
+            .navigation {
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                width: 50%;
+                .btn-navigation {
+                    border-radius: 50%;
+                    background-color: grey;
+                    border: 1px grey;
+                    padding: 2px 5px 2px 6px;
+                    cursor: pointer;
+                }
+                .dots {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 80%;
+                    .dot {
+                        border-radius: 50%;
+                        border: 3px grey;
+                        width: 10px;
+                        height: 10px;
+                        background-color: aqua;
+                        cursor: pointer;
+                    }
+                    .active {
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+    }
+    .closed {
+        display: none;
+    }
+}
